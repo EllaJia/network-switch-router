@@ -12,7 +12,7 @@ import java.util.LinkedList;
  */
 public class MacTable {
 
-    private static LinkedList<MacIface> macIfaces;
+    private static LinkedList<MacIface> macIfaces = new LinkedList<>();
 
     public static Iface getIface(MACAddress macAddress){
 

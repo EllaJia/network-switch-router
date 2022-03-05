@@ -59,7 +59,7 @@ public class Switch extends Device
 			java.util.Iterator it = interfaces.entrySet().iterator();
 			while(it.hasNext()){
 				java.util.Map.Entry entry = (java.util.Map.Entry)it.next();
-				Iface ifaceSend = (Iface)entry.getKey();
+				Iface ifaceSend = (Iface)entry.getValue();
 				if (!inIface.equals(ifaceSend)){
 					this.sendPacket(etherPacket,ifaceSend);
 				}
